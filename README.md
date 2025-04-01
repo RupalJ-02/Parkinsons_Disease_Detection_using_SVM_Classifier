@@ -19,6 +19,24 @@ Early detection of Parkinson's disease is vital for effective treatment and mana
 3. **Model Training:** An SVM model is trained using the preprocessed data.
 4. **Model Evaluation:** The performance of the trained model is evaluated using metrics such as accuracy, precision, recall, and F1-score.
 
+## DATASET
+## Attribute Information:
+The dataset contains the following attributes:
+Title: Parkinsons Disease Data Set
+Abstract: Oxford Parkinson's Disease Detection Dataset
+
+* **name**: ASCII subject name and recording number.
+* **MDVP:Fo(Hz)**: Average vocal fundamental frequency.
+* **MDVP:Fhi(Hz)**: Maximum vocal fundamental frequency.
+* **MDVP:Flo(Hz)**: Minimum vocal fundamental frequency.
+* **MDVP:Jitter(%)**, **MDVP:Jitter(Abs)**, **MDVP:RAP**, **MDVP:PPQ**, **Jitter:DDP**: Several measures of variation in fundamental frequency.
+* **MDVP:Shimmer**, **MDVP:Shimmer(dB)**, **Shimmer:APQ3**, **Shimmer:APQ5**, **MDVP:APQ**, **Shimmer:DDA**: Several measures of variation in amplitude.
+* **NHR**, **HNR**: Two measures of the ratio of noise to tonal components in the voice.
+* **status**: Health status of the subject (1 = Parkinson's, 0 = healthy).
+* **RPDE**, **D2**: Two nonlinear dynamical complexity measures.
+* **DFA**: Signal fractal scaling exponent.
+* **spread1**, **spread2**, **PPE**: Three nonlinear measures of fundamental frequency variation.
+
 ## Impact
 
 The model can assist medical professionals in diagnosing Parkinson's disease and improving patient care. Early detection and prediction of Parkinson's disease can lead to timely interventions and better management of the disease.
