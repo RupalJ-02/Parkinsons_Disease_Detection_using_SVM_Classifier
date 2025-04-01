@@ -52,7 +52,26 @@ The machine learning model used in this project is a Support Vector Machine (SVM
 
 ## Results
 
-The trained SVM model achieved an accuracy of [insert accuracy here]% on the test set. This result demonstrates the potential of using voice measurements for the early detection and prediction of Parkinson's disease.
+## Model Evaluation Metrics
+
+Here are the evaluation metrics for the model:
+
+* **Accuracy: 0.8846153846153846**
+    * Accuracy represents the overall correctness of the model's predictions. It's the ratio of correctly predicted instances to the total instances. In this case, the model correctly predicts approximately 88.46% of the samples.
+* **Precision: 0.8951612903225806**
+    * Precision measures the proportion of correctly predicted positive instances (Parkinson's in this case) out of all instances predicted as positive. It answers the question: "Of all the instances predicted as Parkinson's, how many were actually Parkinson's?" A precision of 89.52% indicates that when the model predicts Parkinson's, it's correct about 89.52% of the time.
+* **Recall: 0.9568965517241379**
+    * Recall (also known as sensitivity or true positive rate) measures the proportion of correctly predicted positive instances out of all actual positive instances. It answers: "Of all the actual Parkinson's cases, how many did the model correctly identify?" A recall of 95.69% means the model captures 95.69% of all actual Parkinson's cases.
+* **Specificity: 0.675**
+    * Specificity (also known as the true negative rate) measures the proportion of correctly predicted negative instances (healthy cases) out of all actual negative instances. It answers: "Of all the actual healthy cases, how many did the model correctly identify?" A specificity of 67.5% means the model correctly identifies 67.5% of the healthy cases.
+* **F1-Score: 0.925**
+    * The F1-score is the harmonic mean of precision and recall. It provides a balanced measure of a model's performance, especially when dealing with imbalanced datasets. An F1-score of 0.925 indicates a good balance between precision and recall.
+* **Balanced Accuracy: 0.815948275862069**
+    * Balanced accuracy is the average of recall and specificity. It's particularly useful when dealing with imbalanced datasets, as it provides a more accurate representation of the model's overall performance. A value of 0.8159 suggests a reasonable performance, considering both positive and negative classes.
+* **ROC AUC: 0.9418103448275863**
+    * ROC AUC (Receiver Operating Characteristic Area Under the Curve) measures the model's ability to distinguish between positive and negative classes. A value of 0.9418 indicates excellent discrimination ability. A higher ROC AUC indicates that the model is better at distinguishing between the two classes.
+* **Average Precision: 0.9779927524166523**
+    * Average Precision (AP) summarizes the precision-recall curve as the weighted mean of precisions achieved at each threshold, with the increase in recall from the previous threshold used as the weight. A high AP score of 0.978 suggests that the model has very good precision and recall across different thresholds.
 
 ## Future Work
 
